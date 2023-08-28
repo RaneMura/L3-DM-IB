@@ -1,0 +1,345 @@
+Trame 1
+########################################
+Debut de trame:
+
+Ethernet II:
+	Destination address:
+		(ff:ff:ff:ff:ff:ff)
+	Source address:
+		(00:0b:82:01:fc:42)
+	Type:
+		IPv4 (0x0800)
+
+Internet Protocol Version 4 :
+	Version :  4 (0x4)
+	Header Length :  20 bytes (0x5)
+	TOS :  0 (0x00)
+	Total Length :  300 (0x012c)
+	Identification :  0xa836 (43062)
+	R :  0 (0x0)
+	DF :  0 (0x0)
+	MF :  0 (0x0)
+	Fragment Offset :  0 (0x0000000000000)
+	TTL :  250 (0xfa)
+	Protocol :  17 (0x11)
+		UDP
+	Header Checksum :  0x178b
+	Source Address :  0.0.0.0 (0x00000000)
+	Destination Address :  255.255.255.255 (0xffffffff)
+	Options :
+
+User Datagram Protocol :
+	Source Port:  68 (0x0044)
+		DHCP
+	Destination Port:  67 (0x0043)
+		DHCP
+	Total length:  280 (0x0118)
+	Checksum:  0x591f
+
+Dynamic Host Configuration Protocol : 
+	Message Type : Boot Request (1) (0x01)
+	Hardware Type :  Ethernet (0x01)
+	Hardware Address Length :  6 (0x06)
+	Hops :  0 (0x00)
+	Transaction ID : 0x00003d1d
+	Secons elapsed :  0 (0x0000)
+	Bootp flags :  0 (0x0000)
+	Client IP address :  0.0.0.0 (0x00000000)
+	Your (client) IP address :  0.0.0.0 (0x00000000)
+	Next server IP address :  0.0.0.0 (0x00000000)
+	Relay agent IP address :  0.0.0.0 (0x00000000)
+	Client MAC Address :  (00:0b:82:01:fc:42) (0x000b8201fc42)
+	Client Hardware Address Padding : (0x00000000000000000000)
+	Server Host Name not given 
+	Boot File Name not given 
+	Magic Cookie :  DHCP
+	Options :
+		Option : (53) DHCP Message Type
+			Length : 1
+			DHCP : Discover
+
+		Option : (61) Client Identifier
+			Length : 7
+			Hardware Type : Ethernet (0x01) 
+			Client MAC Address(00:0b:82:01:fc:42)
+
+		Option : (50) Requested IP Address 
+			Length : 4
+			Requested IP Address : 0.0.0.0
+
+		Option : (55) Parameter Request List 
+			Length : 4
+			Parameter Request List Item : (1) Subnet Mask
+			Parameter Request List Item : (3) Router
+			Parameter Request List Item : (6) Domain Server Addresses
+			Parameter Request List Item : (42) NTP Server Addresses
+
+		Option : (255) End
+		Padding
+
+Fin de trame
+########################################
+
+
+
+Trame 2
+########################################
+Debut de trame:
+
+Ethernet II:
+	Destination address:
+		(00:0b:82:01:fc:42)
+	Source address:
+		(00:08:74:ad:f1:9b)
+	Type:
+		IPv4 (0x0800)
+
+Internet Protocol Version 4 :
+	Version :  4 (0x4)
+	Header Length :  20 bytes (0x5)
+	TOS :  0 (0x00)
+	Total Length :  328 (0x0148)
+	Identification :  0x0445 (1093)
+	R :  0 (0x0)
+	DF :  0 (0x0)
+	MF :  0 (0x0)
+	Fragment Offset :  0 (0x0000000000000)
+	TTL :  128 (0x80)
+	Protocol :  17 (0x11)
+		UDP
+	Header Checksum :  0x0000
+	Source Address :  192.168.0.1 (0xc0a80001)
+	Destination Address :  192.168.0.10 (0xc0a8000a)
+	Options :
+
+User Datagram Protocol :
+	Source Port:  67 (0x0043)
+		DHCP
+	Destination Port:  68 (0x0044)
+		DHCP
+	Total length:  308 (0x0134)
+	Checksum:  0x2233
+
+Dynamic Host Configuration Protocol : 
+	Message Type : Boot Reply (2) (0x02)
+	Hardware Type :  Ethernet (0x01)
+	Hardware Address Length :  6 (0x06)
+	Hops :  0 (0x00)
+	Transaction ID : 0x00003d1d
+	Secons elapsed :  0 (0x0000)
+	Bootp flags :  0 (0x0000)
+	Client IP address :  0.0.0.0 (0x00000000)
+	Your (client) IP address :  192.168.0.10 (0xc0a8000a)
+	Next server IP address :  192.168.0.1 (0xc0a80001)
+	Relay agent IP address :  0.0.0.0 (0x00000000)
+	Client MAC Address :  (00:0b:82:01:fc:42) (0x000b8201fc42)
+	Client Hardware Address Padding : (0x00000000000000000000)
+	Server Host Name not given 
+	Boot File Name not given 
+	Magic Cookie :  DHCP
+	Options :
+		Option : (53) DHCP Message Type
+			Length : 1
+			DHCP : Offer
+
+		Option : (1) Subnet Mask
+			Length : 4
+			Subnet Mask : 255.255.255.0
+
+		Option : (58) Renewal Time Value 
+			Length : 4 
+			Renewal Time Value : (1800s)
+
+		Option : (59) Rebinding Time Value 
+			Length : 4 
+			Rebinding Time Value : (3150s)
+
+		Option : (51) IP Address Lease Time 
+			Length : 4 
+			IP Address Lease Time : (3600s)
+
+		Option : (54) DHCP Server Identifier 
+			Length : 4
+			DHCP Server Identifier : 192.168.0.1
+
+		Option : (255) End
+		Padding
+
+Fin de trame
+########################################
+
+
+
+Trame 3
+########################################
+Debut de trame:
+
+Ethernet II:
+	Destination address:
+		(ff:ff:ff:ff:ff:ff)
+	Source address:
+		(00:0b:82:01:fc:42)
+	Type:
+		IPv4 (0x0800)
+
+Internet Protocol Version 4 :
+	Version :  4 (0x4)
+	Header Length :  20 bytes (0x5)
+	TOS :  0 (0x00)
+	Total Length :  300 (0x012c)
+	Identification :  0xa837 (43063)
+	R :  0 (0x0)
+	DF :  0 (0x0)
+	MF :  0 (0x0)
+	Fragment Offset :  0 (0x0000000000000)
+	TTL :  250 (0xfa)
+	Protocol :  17 (0x11)
+		UDP
+	Header Checksum :  0x178a
+	Source Address :  0.0.0.0 (0x00000000)
+	Destination Address :  255.255.255.255 (0xffffffff)
+	Options :
+
+User Datagram Protocol :
+	Source Port:  68 (0x0044)
+		DHCP
+	Destination Port:  67 (0x0043)
+		DHCP
+	Total length:  280 (0x0118)
+	Checksum:  0x9fbd
+
+Dynamic Host Configuration Protocol : 
+	Message Type : Boot Request (1) (0x01)
+	Hardware Type :  Ethernet (0x01)
+	Hardware Address Length :  6 (0x06)
+	Hops :  0 (0x00)
+	Transaction ID : 0x00003d1e
+	Secons elapsed :  0 (0x0000)
+	Bootp flags :  0 (0x0000)
+	Client IP address :  0.0.0.0 (0x00000000)
+	Your (client) IP address :  0.0.0.0 (0x00000000)
+	Next server IP address :  0.0.0.0 (0x00000000)
+	Relay agent IP address :  0.0.0.0 (0x00000000)
+	Client MAC Address :  (00:0b:82:01:fc:42) (0x000b8201fc42)
+	Client Hardware Address Padding : (0x00000000000000000000)
+	Server Host Name not given 
+	Boot File Name not given 
+	Magic Cookie :  DHCP
+	Options :
+		Option : (53) DHCP Message Type
+			Length : 1
+			DHCP : Request
+
+		Option : (61) Client Identifier
+			Length : 7
+			Hardware Type : Ethernet (0x01) 
+			Client MAC Address(00:0b:82:01:fc:42)
+
+		Option : (50) Requested IP Address 
+			Length : 4
+			Requested IP Address : 192.168.0.10
+
+		Option : (54) DHCP Server Identifier 
+			Length : 4
+			DHCP Server Identifier : 192.168.0.1
+
+		Option : (55) Parameter Request List 
+			Length : 4
+			Parameter Request List Item : (1) Subnet Mask
+			Parameter Request List Item : (3) Router
+			Parameter Request List Item : (6) Domain Server Addresses
+			Parameter Request List Item : (42) NTP Server Addresses
+
+		Option : (255) End
+		Padding
+
+Fin de trame
+########################################
+
+
+
+Trame 4
+########################################
+Debut de trame:
+
+Ethernet II:
+	Destination address:
+		(00:0b:82:01:fc:42)
+	Source address:
+		(00:08:74:ad:f1:9b)
+	Type:
+		IPv4 (0x0800)
+
+Internet Protocol Version 4 :
+	Version :  4 (0x4)
+	Header Length :  20 bytes (0x5)
+	TOS :  0 (0x00)
+	Total Length :  328 (0x0148)
+	Identification :  0x0446 (1094)
+	R :  0 (0x0)
+	DF :  0 (0x0)
+	MF :  0 (0x0)
+	Fragment Offset :  0 (0x0000000000000)
+	TTL :  128 (0x80)
+	Protocol :  17 (0x11)
+		UDP
+	Header Checksum :  0x0000
+	Source Address :  192.168.0.1 (0xc0a80001)
+	Destination Address :  192.168.0.10 (0xc0a8000a)
+	Options :
+
+User Datagram Protocol :
+	Source Port:  67 (0x0043)
+		DHCP
+	Destination Port:  68 (0x0044)
+		DHCP
+	Total length:  308 (0x0134)
+	Checksum:  0xdfdb
+
+Dynamic Host Configuration Protocol : 
+	Message Type : Boot Reply (2) (0x02)
+	Hardware Type :  Ethernet (0x01)
+	Hardware Address Length :  6 (0x06)
+	Hops :  0 (0x00)
+	Transaction ID : 0x00003d1e
+	Secons elapsed :  0 (0x0000)
+	Bootp flags :  0 (0x0000)
+	Client IP address :  0.0.0.0 (0x00000000)
+	Your (client) IP address :  192.168.0.10 (0xc0a8000a)
+	Next server IP address :  0.0.0.0 (0x00000000)
+	Relay agent IP address :  0.0.0.0 (0x00000000)
+	Client MAC Address :  (00:0b:82:01:fc:42) (0x000b8201fc42)
+	Client Hardware Address Padding : (0x00000000000000000000)
+	Server Host Name not given 
+	Boot File Name not given 
+	Magic Cookie :  DHCP
+	Options :
+		Option : (53) DHCP Message Type
+			Length : 1
+			DHCP : ACK
+
+		Option : (58) Renewal Time Value 
+			Length : 4 
+			Renewal Time Value : (1800s)
+
+		Option : (59) Rebinding Time Value 
+			Length : 4 
+			Rebinding Time Value : (3150s)
+
+		Option : (51) IP Address Lease Time 
+			Length : 4 
+			IP Address Lease Time : (3600s)
+
+		Option : (54) DHCP Server Identifier 
+			Length : 4
+			DHCP Server Identifier : 192.168.0.1
+
+		Option : (1) Subnet Mask
+			Length : 4
+			Subnet Mask : 255.255.255.0
+
+		Option : (255) End
+		Padding
+
+Fin de trame
+########################################
