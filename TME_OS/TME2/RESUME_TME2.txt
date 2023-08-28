@@ -1,0 +1,47 @@
+TME 2 : 
+Sharane K.Murali Groupe 6 3701883
+
+real : 5,003 s
+usr : 0,001 s
+sys : 0,002 s 
+
+1.1 
+
+Le temps d'exécution de l'appel est de 5,003 secondes. 
+Le temps d'exécution du processus uniquement par le CPU en mode utilisateur est de 1 milliseconde.
+Le temps dédié par le CPU pour exécuter le processus dans le noyau est de 2 millisecondes
+
+On constate que le processeur est solicité durant 3 millisecondes durant l'exécution de la ligne de commande "time sleep 5"
+
+1.2 
+
+real  0m6,448s
+user  0m6,415s
+sys   0m0,016s
+
+Le temps d'exécution de l'appel est de 6,448 secondes. 
+Le temps d'exécution du processus uniquement par le CPU en mode utilisateur est de 6,415 secondes.
+Le temps dédié par le CPU pour exécuter le processus dans le noyau est de 16 millisecondes
+
+On constate que le processeur est solicité durant 6,431 secondes durant l'exécution de loopcpu.
+Le temps usr est similaire au temps real et le temps sys est assez minime.
+
+1.3
+
+real  0m6,638s
+user  0m3,538s
+sys   0m3,058s
+
+Le temps d'exécution de l'appel est de 6,638 secondes. 
+Le temps d'exécution du processus uniquement par le CPU en mode utilisateur est de 3,538 secondes.
+Le temps dédié par le CPU pour exécuter le processus dans le noyau est de 3,058 secondes.
+
+On constate que le processeur est solicité durant 6,596 secondes durant l'exécution de loopsys.
+Le temps usr est similaire au temps sys et l'appel système getpid() augmente le temps sys. 
+
+
+5.1 
+La priorité du processus est 0.
+
+5.2 
+La priorité de ps est de 19 : il s'agit de la priorité la plus basse.
